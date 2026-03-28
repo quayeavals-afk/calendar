@@ -1,0 +1,90 @@
+* {padding: 0;margin: 0;border: 0;}
+*, *:before, *:after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;
+    -ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: inherit; margin: 0;}
+/*---------------------*/
+
+body {
+    background-color: #ff9d9d;
+    font-size: 34px;
+
+}
+.block{
+    display: flex;
+    width: auto;
+    background-color: rgb(255, 123, 0);
+    padding: 5%;
+}
+.block .ltem{
+    background-color: rgb(179, 87, 0);
+    display: flex;
+    width: 10%;
+    height: auto;
+    margin: 2%;
+    align-items: center;     /* вертикальное выравнивание */
+    justify-content: center; /* горизонтальное выравнивание */
+}
+.block .ltem:hover{
+    background-color: #ff4949;
+}
+.block .ltem:active{
+    background-color: #ff0000;
+}
+.block .content{
+    width: 80%;
+    height: auto;
+    background-color: #ff9d9d;
+}
+.Calendar{
+    margin: 10%;
+    background-color: #6a65ff;
+}
+.Calendar .header{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #00626b;
+    font-size: 24px;
+    gap: 10px;
+    place-content: center;
+    border: 2px solid #000000;
+
+}
+.Calendar .weekdays{
+    font-size: 44px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 колонок равной ширины */
+    text-align: center;
+}
+.Calendar .weekdays *{
+    padding: 10px 0px;
+}
+.Calendar .weekdays *, .Calendar .days *{
+    border: 1px solid #000000;
+}
+.Calendar .days{
+    
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 колонок равной ширины */
+    text-align: center;
+}
+.Calendar .days *{
+    background-color: #908cff;
+    font-size: 34px;
+}
+.Calendar .days .current_day:active{
+    background-color: #3833d7;
+
+}
+
